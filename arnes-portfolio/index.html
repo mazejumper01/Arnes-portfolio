@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forside</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/f023dd87f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+       
+     
+    
+        <img class="logo" src="images/logo.png" alt="logo. Arne - jeg er for cool">
+
+         <!-- search bar right align -->
+         <div class="search">
+            <form action="#">
+                <input type="search" id="site-search" name="search" placeholder=" søg...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+        <nav>
+            <label for="burger-menu"><img src="images/burger-icon.png" alt="burger-icon" class="burger-icon"></label>
+            <input type="checkbox" id="burger-menu">
+            <ul>
+            <li><a href="index.html">forside</a> </li>
+            <li><a href="fotoalmbum.html">fotoalmbum</a></li>
+            <li> <a class="active" href="kontakt.html">kontakt</a></li>
+            </ul>
+  
+        </nav>
+
+        
+    </header>
+
+    <main>
+
+        <article>
+            <h1>velkommen til arnes' portfolio</h1>
+    
+            <p>hej, jeg hedder Arne Nougatgren og jeg er musikalsk socialpædagog og rytmeterapeut, med en særlig forkærlighed for psykedelisk jazz-funk, -i daglig tale: psyzzunk.
+                jeg arbejder hårdt på at skabe bevidsthed om de pædagogiske muligheder der kan skabes i det psyzzunkiske rum. <br>
+                <br>
+                 det burde være indlysende for enhver, men fakta er at kendskabet til psyzzunkens pædagoiske perspektiver er enormt begrænset, i dagens Danmark, om man så må sige.
+              
+    
+            </p>
+            <img class="arne" src="images/arne.jpg" alt="billed af arne">
+    
+          </article>
+
+        <aside>
+            <h2>css flexbox</h2>
+    
+            <p>denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear, inline-block, display:table eller andre nederen hacks.</p>
+    
+    
+            <h3>browser support:</h3>
+    
+            flexbox modellen er efterhånden rigtig godt understøttet i alle moderne browsere.
+    
+    
+            <h3>hvordan gør man, arne?</h3>
+    
+            <p>jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide give deres umidelbare forældre-element display-proprtien <q>flex</q></p>
+            <div class="example"><p>
+                .flex-container { display:flex; }
+            </p></div>
+            <h3>fordel jer lidt unger</h3>
+
+            <p>hvis man ligsom vil have alle flex-børnene til at fordele sig over hele bredten så kan manlige tilføje en <q>justify-content property</q> med værdien <q>space between</q></p>
+
+            <div class="example">
+                <p>.flex-container { <br>
+                    display: flex; <br>
+                    justify-content: space-between; <br>
+                } 
+                </p>
+            </div>
+    
+        </aside>
+      
+
+       
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="bottom">
+            <address>
+            <h2 class="h2-footer">arnes portfolio</h2>
+            
+            paradisæblevej 13 <br>
+                <br>
+            1313 Andeby</address>
+        </div>
+        <div class="bottom">
+            <address>
+            <h2 class="h2-footer">get in touch</h2>
+       
+            kontakt <br>
+             <br>
+                facebook
+            </address>
+        </div>
+            <div class="bottom">
+                <address>
+            <h2 class="h2-footer">privatlivspolitik</h2>
+            
+                småkagepolitik <br>
+                    <br>
+                gdpr ligsom
+            </address>
+         </div>
+
+    </footer>
+    
+
+</body>
+</html>

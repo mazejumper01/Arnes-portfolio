@@ -1,0 +1,373 @@
+:root{
+    --base-color: ;
+    --accent-color: ;
+
+    --base-font: font-family: 'Ranchers', cursive; ;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*--------------------- ændre alt på telefon ---------------------*/
+
+header{
+    background-color: #fff2d8;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    
+    /* Linjen bagved */
+    nav {
+        background-color: #bd2424;
+        width: 100%;
+        text-transform: uppercase;
+        
+      }
+    
+    a{
+        border-left: none;
+        border-right: none;
+        font-family: 'Ranchers', cursive;
+    }
+    
+    nav #burger-menu {
+      display: none;
+    }
+    
+    nav ul{
+      display: none;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        
+        
+    
+    }
+    
+    /* flytter på selve linksne*/
+    ul{
+      margin-right: 13.6em;
+        
+      }
+        
+        /* Link style */
+        nav a {
+          float: right;
+          color: white;
+          text-align: center;
+          padding: 0.875em 1em;
+          text-decoration: none;
+          font-size: 1.0625;
+      
+        }
+        
+        /* Farve når man har musen over */
+        nav a:hover {
+          background-color: #fff2d8;
+          color: black;
+        }
+      
+         /* styling search bar */
+         .search input[type=search]{
+          width:14em;
+          height:2em;
+      
+      }
+           
+      .search{
+        margin-left: 5.5em;
+        
+          
+      }
+      .search button{
+          background-color: #bd2424;
+          color: white;
+          padding: 0.456em 0.625em;
+          margin-bottom: 2em;
+          border: none;
+          cursor: pointer;
+      }
+      
+    
+      /* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #f2f2f2; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+
+  
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #bd2424;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #822222;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+    
+  p{
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    text-transform: lowercase;
+  }
+   
+   p::first-letter {
+    text-transform: uppercase;
+    
+   }
+
+  h1, h2, h3{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: 'Ranchers', cursive;
+    font-size: large;
+    text-transform: capitalize;
+    text-transform: lowercase;
+
+
+  }
+
+  h1, h2, h3::first-letter {
+    text-transform: uppercase;
+    
+  }
+      
+    
+      main{
+       
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 74em;
+        margin-bottom: 2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-wrap: wrap;
+    
+    
+      }
+    
+      footer{
+        background-color: #fff2d8;
+        justify-content: space-around;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        padding-left: 1em;
+      }
+
+      .h2-footer{
+        color: black;
+        text-shadow: 4px 4px 16px orange;
+      }
+      
+    
+    
+    /* burger menuen*/
+    #burger-menu:checked + ul {
+      display: flex;
+    }
+  
+/*--------------------- Til telefon men ændre alt på desktop ---------------------*/
+@media screen and (min-width: 831px) {
+
+    header{
+      background-color: #fff2d8;
+      width: 100%;
+      height: 10em;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 3em;
+      
+      flex-wrap: wrap;
+      justify-content: space-between;
+      box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+      }
+    
+    nav label {
+      display: none;
+        
+  
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+       
+  
+    }
+    /* flytter på selve linksne*/
+  ul{
+    margin-right: 13.6em;
+      
+    }
+      
+      /* Link style */
+      nav a {
+        float: right;
+        color: white;
+        text-align: center;
+        padding: 0.875em 1em;
+        text-decoration: none;
+        font-size: 1.0625;
+    
+      }
+      
+      /* Farve når man har musen over */
+      nav a:hover {
+        background-color: #fff2d8;
+        color: black;
+      }
+    
+       /* styling search bar */
+       .search input[type=text]{
+        width:14em;
+        height:2em;
+    
+    }
+         
+    .search{
+        float:right;
+        margin:0.4375em;
+        
+    }
+    .search button{
+        background-color: #bd2424;
+        color: white;
+        float: right;
+        padding: 0.456em 0.625em;
+        margin-right: 16em;
+        margin-bottom: 2em;
+        border: none;
+       
+        cursor: pointer;
+    }
+    
+    .logo{
+      margin-left: 7em;
+    }
+    
+  
+    main {
+       margin-left: 20%;
+       margin-right: 20%;
+       height: 50em;
+       margin-bottom: 2em;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       display: flex;
+       flex-wrap: wrap;
+    }
+     a{
+      border-left: thin solid #f2f2f2;
+      border-right: thin solid #f2f2f2;
+    }
+
+    p{
+        margin-bottom: 1em;
+        text-transform: capitalize;
+        text-transform: lowercase;
+      }
+       
+       p::first-letter {
+        text-transform: uppercase;
+        
+       }
+    
+      h1, h2, h3{
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-family: 'Ranchers', cursive;
+        font-size: large;
+        text-transform: capitalize;
+        text-transform: lowercase;
+    
+    
+      }
+    
+      h1, h2, h3::first-letter {
+        text-transform: uppercase;
+        
+      }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #f2f2f2; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #bd2424;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #822222;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  
+  
+ 
+  
+    footer{
+      background-color: #fff2d8;
+      justify-content: space-around;
+      height: 11.3em;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .h2-footer{
+        color: black;
+        text-shadow: 4px 4px 16px orange;
+      }
+}
